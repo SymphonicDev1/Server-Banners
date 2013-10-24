@@ -5,7 +5,7 @@
 //
 // Description: Code to parse Battlefield servers
 // Initial author: momo5502 <MauriceHeumann@googlemail.com>
-// Note: Main algorithm by Richard Pery, copied from LGSL!
+// Note: Main algorithm by Richard Pery, copied from LGSL @ http://greycube.com
 //
 //------------------------------------------------------------------------------------------------------------+
 
@@ -110,7 +110,7 @@ function cleanMapname( &$mapname )
 }
 
 //------------------------------------------------------------------------------------------------------------+
-//LGSL code - thx to Richard Pery
+//LGSL code - thx to Richard Pery @ http://greycube.com
 
 function lgsl_cut_pascal( &$buffer, $start_byte = 1, $length_adjust = 0, $end_byte = 0 )
 {

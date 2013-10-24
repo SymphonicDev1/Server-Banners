@@ -44,7 +44,7 @@ Go to http://momo5504.square7.de/banner.html to generate a banner.
     PixelDemon (alexdahlem) for his amazing gdlib tut
     Avail for the online generator (http://momo5504.square7.de/banner.html) and the new design
     Icedream for the api
-    Richard Perry for some LGSL images, the call protection, BFBC2 query code and his commenting system^^
+    Richard Perry for some LGSL images, the call protection, BFBC2 query code and his commenting system^^ ( http://greycube.com )
     xPaw for his minecraft query class
     The Dark Arts for his help throughout the coding. (Especially MC colors.)
     BlackPulse for hosting all my stuff <3 ( http://blackpulse.us )
