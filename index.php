@@ -9,6 +9,7 @@
 //
 //------------------------------------------------------------------------------------------------------------+
 
+ini_set('display_errors', 'on');
 error_reporting(E_ALL ^  E_NOTICE); 
 define( "BANNER_CALL", TRUE );
 
