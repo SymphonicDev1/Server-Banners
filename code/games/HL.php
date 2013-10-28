@@ -1,9 +1,9 @@
 <?php
 //------------------------------------------------------------------------------------------------------------+
 //
-// Name: CSS.php
+// Name: HL.php
 //
-// Description: Code to query Counter Strike: Source servers
+// Description: Code to query Half Life servers
 // Initial author: momo5502 <MauriceHeumann@googlemail.com>
 // Note: Query algorithm by HSFighter!
 //
@@ -14,7 +14,7 @@ if ( !defined( "BANNER_CALL" ) ) {
 }
 
 //------------------------------------------------------------------------------------------------------------+
-//Query CSS server - main function!
+//Query HL server - main function!
 
 function query( $ip, $port )
 {
@@ -28,14 +28,15 @@ function query( $ip, $port )
 	if( isSet($infos["name"]) && $infos["name"] != "" )
 	{
 		$data = $infos;
-		$data[ "protocol" ]   = "CSS";
+		$game = getHLGame( $infos["directory"] );
+		$data[ "protocol" ]   = $game;
 		$data[ "value" ]      = 1;
 		$data[ "server" ]     = $ip . ":" . $port;
 		$data[ "response" ]   = "-";
 		$data[ "hostname" ]   = $infos["name"];
 		$data[ "clients" ]    = $infos["players"];
 		$data[ "maxclients" ] = $infos["maxplayers"];
-		$data[ "gametype" ]   = "CSS";
+		$data[ "gametype" ]   = $game;
 		$data[ "mapname" ]    = $infos["map"];
 		$data[ "unclean" ]    = $data[ "hostname" ];
 	}
@@ -43,6 +44,26 @@ function query( $ip, $port )
 		$data = getErr( $ip, $port );
 		
 	return $data;
+}
+
+//------------------------------------------------------------------------------------------------------------+
+// Get game based on derectory query
+// TODO: Do this with DB query
+
+function getHLGame( $dir )
+{
+	switch( $dir )
+	{
+		case "cstrike":
+			return "CSS";
+			break;
+			
+		case "left4dead":
+			return "L4D";
+			break;
+	}
+	
+	return false;
 }
 
 //------------------------------------------------------------------------------------------------------------+
