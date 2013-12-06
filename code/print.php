@@ -119,8 +119,8 @@ function printimage( $data )
 	//Print this if it is!
 	else {
 		
-		if ( $game == "MW2" && $data[ 'isW2' ] )
-			$game = "W2";
+		/*if ( $game == "MW2" && $data[ 'isW2' ] )
+			$game = "AIW";*/
 		
 		$gamepath  = $root . "games/" . $game . ".png";
 		$cleanname = $data[ 'hostname' ];
