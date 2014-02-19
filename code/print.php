@@ -133,7 +133,7 @@ function printimage( $data )
 		$length     = $xoffset;
 		$color      = Imagecolorallocate( $imagecontainer, 255, 255, 255 );
 		$maxlen     = strlen( $data[ 'unclean' ] );
-		$isCOD      = ( $_game == "COD" );
+		$isCOD      = ( $_game == "COD" || $_game == "TMW3" );
 		$namelength = getStringWidth( $data[ 'hostname' ], $font, $font_size );
 		
 		for ( $i = 0; $i <= $maxlen; $i++ ) {

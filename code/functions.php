@@ -262,6 +262,7 @@ function getGameEngine( $var )
 			return "MW2"; // IW4 engine
 			break;
 		
+		case ( "TMW3" ): // TeknoMW3 and their OOB stuff...
 		case ( "104" ):
 		case ( "19816" ):
 		case ( "82" ): // Seems to be faked server ports, but meh
