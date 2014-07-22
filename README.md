@@ -51,4 +51,9 @@ Go to http://momo5504.square7.de/banner.html to generate a banner.
     Jan Odvarko for the color picker on the site ( http://jscolor.com/ )
     MAGIC for (temporarily) hosting the banners
     Duulis @ steamsignatures.com for the pattern, shadow and border
-	HSFighter for his Half Life query class
+    HSFighter for his Half Life query class
+
+=================================================================================
+
+<p align="center">If you like my work, feel free to contribute:<br> 
+<a href="http://momo5504.square7.de/donate.html"><img height="35" src="http://momo5504.square7.de/Donate.png" /></a></p>
