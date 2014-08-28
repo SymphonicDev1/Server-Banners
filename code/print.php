@@ -23,7 +23,7 @@ function printimage( $data )
 {
 	global $root, $font, $_game, $f_inf;
 	
-	$font_size = 15;
+	$font_size = 17;
 	$yoffset   = 28;
 	$xoffset   = 165;
 	

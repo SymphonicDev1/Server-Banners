@@ -27,7 +27,7 @@ $root  = "images/"; // Folder where to get the images
 $font  = "fonts/font.ttf"; // Font file for the name
 $f_inf = "fonts/contl.ttf"; // Font file for the info
 
-$f_inf = $font; // Looks good on some servers, on others it doesn't :P
+//$f_inf = $font; // Looks good on some servers, on others it doesn't :P
 
 banner();
 
