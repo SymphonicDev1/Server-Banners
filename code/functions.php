@@ -259,6 +259,7 @@ function getGameEngine( $var )
 		case ( "142" ): // (g)a(y)Rev protocol (info query)
 		case ( "144" ): // (g)a(y)Rev protocol (status query)
 		case ( "145" ): // React protocol
+		case ( "148" ): // IW4x protocol
 		case ( "61586" ):
 			return "MW2"; // IW4 engine
 			break;
